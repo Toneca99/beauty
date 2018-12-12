@@ -1,0 +1,24 @@
+.site-header {
+    background: url("../images/Beauty-Courses.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 45rem;
+    background-position: 55% 25%;
+    background-position-y: 55%;
+}
+
+.site-branding {
+    display: flex;
+    align-self: stretch;
+    position:relative;
+    top:-1rem;
+    margin-bottom:-1rem;
+ 
+    img {
+        background: white;
+        padding:1rem 1.5rem;
+        width:auto;
+        height:100%;
+        
+    }
+}

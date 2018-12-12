@@ -1,0 +1,35 @@
+html {
+    font:var(--font-size-initial,12px)/1.5  "Karla",sans-serif;
+}
+
+@media screen and (min-width:500px) {
+    html { font-size:var(--font-size-lv2,14px); }
+}
+
+@media screen and (min-width:700px) {
+    html { font-size:var(--font-size-lv2,16px); }
+}
+
+@media screen and (min-width:1600px) {
+    html { font-size:var(--font-size-lv4,18px);}
+}
+
+body, table, th, td, form, input, textarea, option, select{
+    font:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    padding-bottom: 0.5em;
+    font-weight:400;
+    font-family:"Helvetica";
+    text-transform:uppercase;
+    margin:1.3em 0;
+}
+
+$heading:(h1: 2.6em ,h2: 2.2em , h3: 1.8em , h4: 1.6em , h5: 1.5em, h6:1.5em);
+@each $heading , $size in $heading {
+    #{$heading}{
+        font-size: $size;
+    }
+}
