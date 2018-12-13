@@ -1,5 +1,5 @@
 html {
-    font:var(--font-size-initial,12px)/1.5  "Karla",sans-serif;
+    font:var(--font-size-initial,12px)/1.6  "Karla",sans-serif;
 }
 
 @media screen and (min-width:500px) {
@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family:"Helvetica";
     text-transform:uppercase;
     margin:1.3em 0;
+    color:rgb(232, 4, 139);
 }
 
 $heading:(h1: 2.6em ,h2: 2.2em , h3: 1.8em , h4: 1.6em , h5: 1.5em, h6:1.5em);

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700');
-
+@import '../fontawesome/css/all.css';
 @import 'variables';
 @import 'reset';
 @import 'typography';
 
+@import 'buttons';
+
+
 @import 'navigation';
 @import 'site-header';
+@import 'index';
