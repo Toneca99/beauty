@@ -121,10 +121,13 @@
     color: rgb(95, 95, 95);
     padding: 0 10rem;
     background: rgb(251, 248, 251);
+    padding-bottom:2rem;
 
     h2 {
         font-weight: 700;
         padding-bottom: 0;
+        @extend %reset;
+        padding:5.5rem 0 1.5rem 0;
     }
 
     div {
@@ -184,7 +187,6 @@
     background-position: 50% 10%;
     background-repeat: no-repeat;
     color: #FFF;
-    margin-top: 2rem;
     text-align: center;
     position: relative;
 
