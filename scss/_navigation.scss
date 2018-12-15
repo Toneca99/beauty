@@ -1,16 +1,27 @@
 .navigation {
     margin-top:-42.5rem;
     background: rgba(black , 0.5);
+    transition:background 0.2s ease-in,box-shadow 0.2s ease-in;
     display:flex;
     justify-content: space-between;
     padding:0 13rem;
     flex-wrap:wrap;
+
+    @include mq( desktop, max) {
+        padding:0 5rem;
+    }
+
+    @include mq( tablet-wide, max) {
+
+        padding:0 1rem;
+    }
 }
 
 
 .nav-main {
-    display:flex;
-   
+
+    display:none;
+ 
 
 
     ul {
@@ -50,6 +61,100 @@
         
         &:hover:after{
           opacity:1;
+        }
+    }
+}
+
+#nav-main-toggle {
+    display: none;
+}
+
+.nav-toggle {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    position: absolute;
+    top:2.2rem; right:2rem;
+    
+
+    span {
+        display: none;
+
+        /* display: inline-block; */
+    }
+
+    &:before {
+        content: '\f0c9';
+        color: #FFF;
+        animation:navtogglein 0.3s ease-in-out forwards;
+    }
+}
+
+
+/* RESPONSIVE */
+//     R   *RESPONSIVE*
+//     E   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     P   *RESPONSIVE*
+//     O   *RESPONSIVE*
+//     N   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     I   *RESPONSIVE*
+//     V   *RESPONSIVE*
+//     E   *RESPONSIVE*
+
+@media screen and (min-width: 880px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-main {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 879px) {
+    #nav-main-toggle:checked + .site-header {
+
+        .nav-toggle:before {
+            content: '\f00d';
+            animation: jump 0.1s 1 ease-in-out forwards;
+        }
+
+
+        .navigation {
+            display:block;
+            background: rgba(black , 1);
+            box-shadow:0 0 1rem 2rem black;
+            transition: display 0.3s ease;
+            
+            
+        }
+        .nav-main {
+
+            display:block;
+            text-align: center;
+           
+
+            ul {
+                display:block;
+                padding-top:1rem;
+            }
+
+          li {
+            
+            padding-top:1.5rem;
+            padding-bottom: 1.2rem;
+            animation: navitemin 0.3s 1 ease-in both;
+            transform: scale(0.1) translate(0, 3rem);
+            opacity: 0;
+          }
+        }
+
+        @for $i from 1 through 6 {
+            li:nth-child(#{$i}) {
+                animation-delay: $i * 0.10s;
+            }
         }
     }
 }
