@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items:center;
     padding:3.2rem 12rem;
+    flex-wrap:wrap;
 
     div {
         h2,p {
@@ -27,12 +28,26 @@
             padding-left:0.3rem;
         }
     }
+    
+    a{margin-top:0.5rem;}
 }
 
 .history {
 
     padding:0 12rem;
     color: rgb(95, 95, 95);
+
+    @include mq(desktop, max) {
+        padding:0 8rem;
+    }
+
+    @include mq(tablet, max) {
+        padding:0 4rem;
+    }
+
+    @include mq(phone, max) {
+        padding:0 2rem;
+    }
 
     h2 {
         font-weight:bold;
