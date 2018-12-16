@@ -18,7 +18,7 @@ body.home .navigation {
 }
 
 .navigation {
-    margin-top:-22.5rem;
+    margin-top:-24.5rem;
     background: rgba(black , 0.5);
     transition:background 0.2s ease-in,box-shadow 0.2s ease-in;
     display:flex;
@@ -37,6 +37,20 @@ body.home .navigation {
 }
 
 
+body.home .nav-main {
+    li {
+        &:nth-child(1) a:after {
+            opacity:1;
+        }
+    }
+}
+body.about .nav-main {
+    li {
+        &:nth-child(2) a:after {
+            opacity:1;
+        }
+    }
+}
 .nav-main {
 
     display:none;
@@ -54,10 +68,8 @@ body.home .navigation {
        
         padding:0 2rem;
  
-        &:nth-child(1) a:after {
-            opacity:1;
-        }
     }
+
 
     a {
         text-decoration: none;
