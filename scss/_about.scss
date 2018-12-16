@@ -6,6 +6,19 @@
     padding:3.2rem 12rem;
     flex-wrap:wrap;
 
+
+    @include mq(desktop, max) {
+        padding:3.2rem 8rem;
+    }
+
+    @include mq(tablet, max) {
+        padding:3.2rem 4rem;
+    }
+
+    @include mq(phone, max) {
+        padding:3.2rem 2rem;
+    }
+
     div {
         h2,p {
             display: inline-block;
