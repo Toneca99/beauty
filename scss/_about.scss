@@ -102,18 +102,18 @@
 
     .members {
         display: grid;
-        grid-template-columns: repeat(4, 20rem);
+        grid-template-columns: repeat(4, 18rem);
         grid-gap: 2rem;
         justify-content: center;
         align-items: center;
 
         @include mq(desktop, max) {
-            grid-template-columns: repeat(2, 20rem);
+            grid-template-columns: repeat(2, 18rem);
             grid-gap:3rem;
         }
     
         @include mq(tablet-small, max) {
-            grid-template-columns: repeat(1, 20rem);
+            grid-template-columns: repeat(1, 18rem);
         }
         
         overflow: hidden;
