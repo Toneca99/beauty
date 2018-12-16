@@ -1,5 +1,24 @@
-.navigation {
+body.home .navigation {
     margin-top:-42.5rem;
+    background: rgba(black , 0.5);
+    transition:background 0.2s ease-in,box-shadow 0.2s ease-in;
+    display:flex;
+    justify-content: space-between;
+    padding:0 13rem;
+    flex-wrap:wrap;
+
+    @include mq( desktop, max) {
+        padding:0 5rem;
+    }
+
+    @include mq( tablet-wide, max) {
+
+        padding:0 1rem;
+    }
+}
+
+.navigation {
+    margin-top:-22.5rem;
     background: rgba(black , 0.5);
     transition:background 0.2s ease-in,box-shadow 0.2s ease-in;
     display:flex;

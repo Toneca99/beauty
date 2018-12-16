@@ -1,0 +1,287 @@
+.page-index {
+    background: rgb(179, 1, 106);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:3rem 12rem;
+
+    div {
+        h2,p {
+            display: inline-block;
+            color:#FFF;
+            @extend %reset;
+            
+        }
+
+        h2 {
+            font-weight: 700;
+        }
+
+        p {
+            font-size:1.2rem;
+            padding-left:0.3rem;
+        }
+    }
+}
+
+.history {
+
+    padding:0 10rem;
+    color: rgb(95, 95, 95);
+
+    h2 {
+        font-weight:bold;
+        @extend %reset;
+        padding:5rem 0 1.5rem 0;
+    }
+
+    p {
+        padding-bottom:4rem;
+    }
+
+
+    img {
+        display: block;
+        text-align: center;
+        margin:0 auto;
+        padding-bottom:8rem;
+    }
+}
+
+/* STAFF SECTION */
+
+.staff {
+    background: linear-gradient(rgba(black, 0.8), rgba(black, 0.8)), url("../images/background2.jpg");
+    background-size: cover;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+  
+  
+
+    .members {
+        display: grid;
+        grid-template-columns: repeat(4, 20rem);
+        grid-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(desktop, max) {
+            grid-template-columns: repeat(2, 20rem);
+            grid-gap:3rem;
+        }
+    
+        @include mq(tablet-small, max) {
+            grid-template-columns: repeat(1, 20rem);
+        }
+        
+        overflow: hidden;
+    }
+
+    h2 {
+        color: #FFF;
+    }
+
+    article {
+        background: #FFF;
+        color: rgb(95, 95, 95);
+        margin-bottom: 5rem;
+
+        @include mq(desktop, max) {
+            margin-bottom:0rem;
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                margin-bottom:5rem;
+            }
+
+        }
+
+        @include mq(tablet-small, max) {
+            margin-bottom:0rem;
+
+            &:nth-child(3) {margin:0}
+            &:nth-child(4) {
+                margin-bottom:5rem;
+            }
+
+        }
+        div {
+            text-align: left;
+            padding: 1.5rem;
+        }
+    }
+
+    h4 {
+        @extend %reset;
+
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.job {
+    font-style: italic;
+    padding-bottom: 1.5rem;
+}
+
+.heading {
+    padding: 3rem 14rem;
+
+    @include mq(Screen1, max) {
+        padding:3rem 5rem;
+    }
+
+    @include mq(phablet, max) {
+        padding:3rem 2rem;
+    }
+
+    h2 {
+        @extend %reset;
+
+        padding: 2.5rem 0;
+        font-weight: 700;
+    }
+
+    p {
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* PERKS SECTION */
+
+.perks {
+    background: rgb(179, 1, 106);
+    color:#FFF;
+    display:flex;
+    flex-wrap:wrap;
+    
+    justify-content: space-evenly;
+    padding:4.5rem 5rem;
+    
+    align-items: center;
+    
+
+    article {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:1rem;
+
+   
+    }
+}
+
+.numbers {
+    font-weight:bold;
+    font-size:2.2rem;
+    padding-top:1rem;
+}
+
+
+/* NEWS SECTION */
+
+
+.news {
+    text-align: center;
+    color: rgb(95, 95, 95);
+    padding:7rem 12rem;
+
+
+    @include mq ( desktop-wide, max) {
+        padding:7rem 8rem;
+    }
+    @include mq ( desktop, max) {
+        padding:7rem 2rem;
+    }
+  
+    background:rgb(251, 248, 251);
+
+    h2 {
+        font-weight:700;
+        @extend %reset;
+        padding-bottom:1.5rem;
+    }
+
+}
+
+.recent-news {
+    display:flex;
+    justify-content: space-between;
+    padding-top:7rem;
+    text-align:left;
+    
+    @include mq ( tablet-wide, max) {
+       flex-direction: column;
+       align-items: center;
+    }
+    
+
+    article {
+        display:flex;
+        background:#FFF;
+        align-items: flex-start;
+        border-radius:0.2rem;
+        box-shadow:1px 1px 2px rgba(0,0,0,0.15);
+        margin-bottom:5.5rem;
+        
+        @include mq(tablet-wide,max) {
+
+            &:nth-child(1),
+            &:nth-child(2){
+                margin:3rem;
+            }
+
+        }
+
+        @include mq(tablet,max) {
+
+            display:block;
+        }
+
+        img {
+            width:auto;
+            height:100%;
+
+            @include mq(tablet,max) {
+
+                width:100%;
+                height:auto;
+            }
+        }
+        
+        a {
+            display:block;
+            text-decoration: none;
+            color:rgb(232, 4, 139);
+            font-size:1.5rem;
+            font-weight:bold;
+        }
+
+        &:nth-child(1){
+            margin-right:3rem;
+        }
+        &:nth-child(2){
+            margin-left:3rem;
+        }
+    }
+
+
+
+    .info {
+        padding:4rem 5rem 5rem 1rem;
+
+        @include mq(tablet,max) {
+            padding:4rem 5rem 5rem 2rem;
+        }
+    }
+}
