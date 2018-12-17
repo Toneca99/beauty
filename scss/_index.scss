@@ -265,14 +265,14 @@
 
 .services-by {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 26.5rem);
     grid-template-rows: 1fr 1fr;
     padding-top: 4.5rem;
     grid-gap: 2rem;
     justify-content: center;
 
     @include mq(desktop, max) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 22rem);
     }
 
     @include mq(tablet, max) {
@@ -286,6 +286,7 @@
 
         img {
             border-radius: 50%;
+            width:65%;
         }
     }
 
