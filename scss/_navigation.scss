@@ -37,6 +37,8 @@ body.home .navigation {
 }
 
 
+
+/* Navigation li underline */
 body.home .nav-main {
     li {
         &:nth-child(1) a:after {
@@ -51,6 +53,15 @@ body.about .nav-main {
         }
     }
 }
+body.services .nav-main {
+    li {
+        &:nth-child(3) a:after {
+            opacity:1;
+        }
+    }
+}
+
+
 .nav-main {
 
     display:none;

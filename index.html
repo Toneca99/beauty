@@ -2,31 +2,8 @@
 layout: site
 ---
 
-<section class="location">
-    <article>
-        <img src="images/icons/header - phone.png" alt="">
-        <div>
-            <span>1-811-234-5678</span>
-            <span>info@mail.com</span>
-        </div>
-    </article>
-    <article>
-        <img src="images/icons/header - location.png" alt="">
-        <div>
-            <span>199 Park Ave, San Jose, CA </span>
-            <span>95110, United States</span>
-        </div>
-    </article>
-    <article>
-        <img src="images/icons/header - time.png" alt="">
-        <div>
-            <span>Mon - Sat 9.00 - 18.30</span>
-            <span>Sunday Closed</span>
-        </div>
-    </article>
+{% include location.html %}
 
-    <a href="#" class="button">Contact Us</a>
-</section>
 <section class="about-us">
     <div class="text-side">
         <h2>About us</h2>
@@ -38,14 +15,14 @@ layout: site
         <a href="#" class="button2">Read More</a>
     </div>
     <div class="img-side">
-        <img src="images/about1.jpg" alt="">
-        <img src="images/about2.jpg" alt="">
+        <img src="{{ site.baseurl }}/images/about1.jpg" alt="">
+        <img src="{{ site.baseurl }}/images/about2.jpg" alt="">
     </div>
 </section>
 
 <section class="special">
     <div>
-        <p> <span>Our</span> Special <span>Offer</span></p>
+        <p> <span>Our</<!-- SERVICES SECTION -->span> Special <span>Offer</span></p>
 
         <p><span>NEW CLIENT OFFER </span>$15 OFF <span>( total services on your first visit )</span></p>
 
@@ -53,94 +30,10 @@ layout: site
     </div>
 </section>
 
-<section class="services">
-    <h2>OUR SERVICES</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-    <div class="services-by">
-        <article>
-            <img src="images/hair.jpg" alt="">
-            <h4>Hair cut</h4>
-            <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
-        </article>
-        <article>
-            <img src="images/hair color.jpg" alt="">
-            <h4>Hair color</h4>
-            <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
-        </article>
-        <article>
-            <img src="images/nail treatment.jpg" alt="">
-            <h4>Nail treatments</h4>
-            <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
-        </article>
-        <article>
-            <img src="images/makeup.jpg" alt="">
-            <h4>Make Up</h4>
-            <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
-        </article>
-        <article>
-            <img src="images/hair care.jpg" alt="">
-            <h4>Hair care</h4>
-            <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
-        </article>
-        <article>
-            <img src="images/waxing.jpg" alt="">
-            <h4>waxing</h4>
-            <p>vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
-        </article>
-    </div>
-
-    <div class="service-buttons">
-        <a href="#" class="button2">Download catalog</a>
-        <a href="#" class="button">View all</a>
-    </div>
-</section>
-
-<section class="staff">
-    <div class="heading">
-        <h2>OUR STAFF</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-            suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="members">
-        <article>
-            <img src="images/team1.jpg" alt="">
-            <div>
-                <h4>JESSICA DOE</h4>
-                <p class="job">Hairdresser</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-            </div>
-        </article>
-        <article>
-            <img src="images/team2.jpg" alt="">
-            <div>
-                <h4>Anna DOE</h4>
-                <p class="job">Hairdresser</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-            </div>
-        </article>
-        <article>
-            <img src="images/team3.jpg" alt="">
-            <div>
-                <h4>EvieDOE</h4>
-                <p class="job">Hairdresser</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-            </div>
-        </article>
-        <article>
-            <img src="images/team4.jpg" alt="">
-            <div>
-                <h4>Molly DOE</h4>
-                <p class="job">Hairdresser</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-            </div>
-        </article>
-
-    </div>
-</section>
+<!-- SERVICES SECTION -->
+{% include services.html %}
+<!-- STAFF SECTION -->
+{% include staff.html %}
 
 <section class="gallery">
     <h2>Awesome gallery</h2>
@@ -148,75 +41,48 @@ layout: site
         dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
         suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
     <div class="img-gallery">
-
-
         <article></article>
         <article></article>
         <article></article>
         <article></article>
-
     </div>
 </section>
-
 <section class="customers">
     <h2>Happy customers</h2>
-
     <div class="happy-customers">
         <article>
-            <img src="images/client1.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/client1.jpg" alt="">
             <div class="testimonial">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
                 <h6>AILEEN DOE</h6>
             </div>
         </article>
         <article>
-            <img src="images/client2.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/client2.jpg" alt="">
             <div class="testimonial">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
                 <h6>BECKY DOE</h6>
             </div>
         </article>
         <article>
-            <img src="images/client3.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/client3.jpg" alt="">
             <div class="testimonial">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
                 <h6>CARISSA DOE</h6>
             </div>
         </article>
         <article>
-            <img src="images/client4.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/client4.jpg" alt="">
             <div class="testimonial">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
                 <h6>CHERISH DOE</h6>
             </div>
         </article>
-
     </div>
 </section>
-
-<section class="perks">
-    <article>
-        <img src="images/icons/happy client.png" alt="">
-        <p class="numbers">9,996</p>
-        <p>Happy Clients</p>
-    </article>
-    <article>
-        <img src="images/icons/award winning.png" alt="">
-        <p class="numbers">845</p>
-        <p>Awards Winning</p>
-    </article>
-    <article>
-        <img src="images/icons/year of experiences.png" alt="">
-        <p class="numbers">30</p>
-        <p>Year of Experiences</p>
-    </article>
-    <article>
-        <img src="images/icons/awsome haircuts.png" alt="">
-        <p class="numbers">450</p>
-        <p>Awesome Haircuts</p>
-    </article>
-</section>
-
+<!-- PERKS SECTION -->
+{% include perks.html %}
+<!-- NEWS SECTION -->
 <section class="news">
     <h2>Recent news</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -225,14 +91,14 @@ layout: site
 
     <div class="recent-news">
         <article>
-            <img src="images/news 1.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/news 1.jpg" alt="">
             <div class="info">
                 <p class="date">April 13, 2016</p>
                 <a href="#"> GET 20% OFF YOUR FIRST VISIT</a>
             </div>
         </article>
         <article>
-            <img src="images/news 2.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/news 2.jpg" alt="">
             <div class="info">
                 <p class="date">April 13, 2016</p>
                 <a href="#"> GET 20% OFF YOUR FIRST VISIT</a>
@@ -243,72 +109,5 @@ layout: site
     <a href="#" class="news-button">Read more</a>
 </section>
 
-<section class="price-table">
-    <h2>Price table</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <div class="table">
-        <article>
-            <div class="list">
-                <ul>
-                    <li>Special offer</li>
-                    <li>$19</li>
-                    <li>Massaging shampoo</li>
-                    <li>Cut and style</li>
-                    <li>Neck massage</li>
-                    <li>Nail treatments</li>
-                    <li>Hair color</li>
-                </ul>
-            </div>
-
-            <a href="#" class="button2">Buy Now</a>
-        </article>
-        <article>
-            <div class="list">
-                <ul>
-                    <li>Special offer</li>
-                    <li>$29</li>
-                    <li>Massaging shampoo</li>
-                    <li>Cut and style</li>
-                    <li>Neck massage</li>
-                    <li>Nail treatments</li>
-                    <li>Hair color</li>
-                </ul>
-            </div>
-
-            <a href="#" class="button2">Buy Now</a>
-        </article>
-        <article>
-            <div class="list">
-                <ul>
-                    <li>Special offer</li>
-                    <li>$59</li>
-                    <li>Massaging shampoo</li>
-                    <li>Cut and style</li>
-                    <li>Neck massage</li>
-                    <li>Nail treatments</li>
-                    <li>Hair color</li>
-                </ul>
-            </div>
-
-            <a href="#" class="button2">Buy Now</a>
-        </article>
-        <article>
-            <div class="list">
-                <ul>
-                    <li>Special offer</li>
-                    <li>$99</li>
-                    <li>Massaging shampoo</li>
-                    <li>Cut and style</li>
-                    <li>Neck massage</li>
-                    <li>Nail treatments</li>
-                    <li>Hair color</li>
-                </ul>
-            </div>
-
-            <a href="#" class="button2">Buy Now</a>
-        </article>
-    </div>
-
-</section>
+ <!-- PRICE TABLE SECTION -->
+ {% include price-table.html %}
