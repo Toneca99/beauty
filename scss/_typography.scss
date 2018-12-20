@@ -6,13 +6,13 @@ html {
     html { font-size:var(--font-size-lv2,14px); }
 }
 
-@media screen and (min-width:700px) {
-    html { font-size:var(--font-size-lv2,16px); }
-}
+// @media screen and (min-width:700px) {
+//     html { font-size:var(--font-size-lv2,16px); }
+// }
 
-@media screen and (min-width:1600px) {
-    html { font-size:var(--font-size-lv4,18px);}
-}
+// @media screen and (min-width:1600px) {
+//     html { font-size:var(--font-size-lv4,18px);}
+// }
 
 body, table, th, td, form, input, textarea, option, select{
     font:inherit;
