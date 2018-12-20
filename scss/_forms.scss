@@ -1,0 +1,53 @@
+.form {
+    text-align: center;
+    margin:0 12rem;
+    color:rgb(85,85,85);
+    
+    h2{
+        font-weight: 700;
+
+    }
+
+    label {
+        display:block;
+        text-align: left;
+    }
+    
+
+    input {
+        width:100%;
+        padding:0.3rem 2.5rem;
+   
+      
+        
+    }
+
+    textarea {
+      
+        height:100%;
+    }
+}
+
+
+.contact-form  {
+    display:flex;
+    justify-content: center;
+    color:#5F5F5F;
+    padding-top:5rem;
+    align-items:  flex-start;
+}
+
+.left-form {
+    padding-right:1rem;
+    align-items:  flex-start;
+    
+    label {
+        padding:0.5rem 0;
+
+        &:nth-child(1) {
+            padding:0;
+        }
+       
+    }
+}
+
