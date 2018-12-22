@@ -15,11 +15,12 @@ permalink: /contact/
 </section>
 
 <section class="form">
-    <h2>GET IN TOUCH</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
+    <div class="contact-heading">
+            <h2>GET IN TOUCH</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>        
+    </div>
     <div class="forms">
         <form action="/" method="POST" class="contact-form">
             <div class="left-form">
@@ -27,7 +28,7 @@ permalink: /contact/
                 <input type="text" name="username" id="username">
                 <label for="password">Email *</label>
                 <input type="password" name="password" id="password">
-                <label for="phone">Phone *</label>
+                <label for="tel">Phone *</label>
                 <input type="number" name="phone" id="phone">
             </div>
             <div class="right-form">
@@ -38,4 +39,9 @@ permalink: /contact/
 
         <a href="#" class="submit-bttn">Submit</a>
     </div>
+</section>
+
+<section class="map">
+    <img src="{{ site.baseurl }}/images/pic01.png" alt="">
+    <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofia&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style></style></div>
 </section>

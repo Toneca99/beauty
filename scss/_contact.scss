@@ -1,0 +1,63 @@
+.contact-heading {
+    padding:0 12rem;
+
+    @include mq (Screen3, max) {
+        padding:0 9rem;
+    }
+
+    @include mq (tablet, max) {
+        padding:0 5rem;
+    }
+
+    @include mq (phone, max) {
+        padding:0 2rem;
+    }
+}
+.map {
+    position:relative;
+
+    img {
+        position:absolute;
+        top:-21rem;
+        left:30vw;
+
+        @include mq(tablet-small,max) {
+            left:15vw;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .map img {
+        width:25rem;
+        top:-22.3rem;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .map img {
+     
+        left:5vw;
+    }
+}
+@media screen and (min-width:1600px) {
+   
+    
+.map {
+    
+    img {
+     
+        top:-16.2rem;
+     
+    }
+}
+}
+.mapouter{text-align:right;height:22rem;width:100%}
+.gmap_canvas {background:none!important;height:22rem;width:100%}
+#gmap_canvas {
+    width:100%;
+    height:22rem;
+}

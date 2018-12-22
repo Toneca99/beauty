@@ -7,6 +7,10 @@ body.home .navigation {
     padding:0 13rem;
     flex-wrap:wrap;
 
+    @include mq( desktop-wide, min) {
+
+   
+    }
     @include mq( desktop, max) {
         padding:0 5rem;
     }
@@ -16,6 +20,7 @@ body.home .navigation {
         padding:0 1rem;
     }
 }
+
 
 .navigation {
     margin-top:-24.5rem;
@@ -61,11 +66,36 @@ body.services .nav-main {
     }
 }
 
+body.gallery .nav-main {
+    li {
+        &:nth-child(4) a:after {
+            opacity:1;
+        }
+    }
+}
+body.blog .nav-main {
+    li {
+        &:nth-child(5) a:after {
+            opacity:1;
+        }
+    }
+}
+
+body.contact .nav-main {
+    li {
+        &:nth-child(6) a:after {
+            opacity:1;
+        }
+    }
+}
+
+
+
 
 .nav-main {
 
     display:none;
- 
+    
 
 
     ul {

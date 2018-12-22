@@ -1,71 +1,3 @@
-.location {
-    display: flex;
-    background: rgb(179, 1, 106);
-    color: #FFF;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2.5rem 3rem;
-
-    @include mq(tablet-wide, max) {
-        flex-wrap:wrap;
-        padding: 2.5rem 9rem;
-
-        a {
-            margin-top:1rem;
-            text-align: center;
-        }
-    }
-
-    @include mq(Screen1, max) {
-       
-        article {
-            margin: 0.5rem;
-           
-        }
-    }
-
-    @include mq(tablet, max) {
-        flex-direction:column;
-
-       
-        
-        article {
-            padding-bottom:2.5rem;
-            
-        }
-    }
-  
-    article {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @include mq(tablet, max) {
-            flex-direction: column;
-            text-align: center;
-        }
-
-    }
-
-    span {
-        display: block;
-
-        &:nth-child(2) {
-            font-weight: bold;
-        }
-    }
-
-    img {
-        font-size: 3rem;
-        margin-right: 1.5rem;
-
-        @include mq(tablet, max) {
-           margin:0;
-        }
-    }
-}
-
-
 /* ABOUT SECTION */
 
 .about-us {
@@ -190,225 +122,6 @@
     }
 }
 
-/* OUR SERVICES SECTION */
-
-.service {
-    text-align: center;
-    color: rgb(95, 95, 95);
-    padding: 0 10rem;
-    background: rgb(251, 248, 251);
-    padding-bottom:2rem;
-
-    @include mq(tablet-wide, max) { 
-
-        padding:0 5rem;
-    }
-
-    @include mq(tablet, max) { 
-
-        padding:0 10rem;
-    }
-
-    @include mq(tablet-small, max) { 
-
-        padding:0 7rem;
-    }
-
-    @include mq(phablet, max) { 
-
-        padding:0 5rem;
-    }
-    
-    @include mq(phone, max) { 
-
-        padding:0 2rem;
-    }
-
-    h2 {
-        font-weight: 700;
-        padding-bottom: 0;
-        @extend %reset;
-        padding:5.5rem 0 1.5rem 0;
-    }
-
-    .service-buttons {
-        padding: 3rem 0;
-        
-        @include mq (phablet, max) {
-            display:flex;
-            flex-direction: column;
-        }
-
-        a {
-            margin: 0 0.5rem;
-
-            @include mq (phablet, max) { 
-                margin:0.5rem 0;
-            }
-
-            &:nth-child(1) {
-                padding: 1rem 1.5rem;
-            }
-
-            &:nth-child(2) {
-                padding: 1rem 2.5rem;
-        
-            }
-
-            &:nth-child(2):hover {
-                border:2px solid black;
-                color:black;
-            }
-        }
-    }
-}
-
-.services-by {
-    display: grid;
-    grid-template-columns: repeat(3, 26.5rem);
-    grid-template-rows: 1fr 1fr;
-    padding-top: 4.5rem;
-    grid-gap: 2rem;
-    justify-content: center;
-
-    @include mq(desktop, max) {
-        grid-template-columns: repeat(2, 22rem);
-    }
-
-    @include mq(tablet, max) {
-        grid-template-columns: 1fr;
-    }
-    article {
-        background: #FFF;
-        border: 1px solid rgb(226, 226, 226);
-        padding: 2rem;
-        border-radius: 0.2rem;
-
-        img {
-            border-radius: 50%;
-            width:65%;
-        }
-    }
-
-    h4 {
-        font-weight: bold;
-
-        @extend %reset;
-
-        padding: 1.5rem 0 1rem 0;
-    }
-
-    p {
-        padding-bottom: 2rem;
-    }
-}
-
-/* STAFF SECTION */
-
-.staff {
-    background: linear-gradient(rgba(black, 0.8), rgba(black, 0.8)), url("../images/background2.jpg");
-    background-size: cover;
-    background-position: 50% 10%;
-    background-repeat: no-repeat;
-    color: #FFF;
-    text-align: center;
-    position: relative;
-  
-  
-
-    .members {
-        display: grid;
-        grid-template-columns: repeat(4, 19rem);
-        grid-gap: 2rem;
-        justify-content: center;
-        align-items: center;
-
-        @include mq(desktop, max) {
-            grid-template-columns: repeat(2, 19rem);
-            grid-gap:3rem;
-        }
-    
-        @include mq(tablet-small, max) {
-            grid-template-columns: repeat(1, 19rem);
-        }
-        
-        overflow: hidden;
-    }
-
-    h2 {
-        color: #FFF;
-    }
-
-    article {
-        background: #FFF;
-        color: rgb(95, 95, 95);
-        margin-bottom: 5rem;
-
-        @include mq(desktop, max) {
-            margin-bottom:0rem;
-
-            &:nth-child(3),
-            &:nth-child(4) {
-                margin-bottom:5rem;
-            }
-
-        }
-
-        @include mq(tablet-small, max) {
-            margin-bottom:0rem;
-
-            &:nth-child(3) {margin:0}
-            &:nth-child(4) {
-                margin-bottom:5rem;
-            }
-
-        }
-        div {
-            text-align: left;
-            padding: 1.5rem;
-        }
-    }
-
-    h4 {
-        @extend %reset;
-
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.job {
-    font-style: italic;
-    padding-bottom: 1.5rem;
-}
-
-.heading {
-    padding: 3rem 14rem;
-
-    @include mq(Screen1, max) {
-        padding:3rem 5rem;
-    }
-
-    @include mq(phablet, max) {
-        padding:3rem 2rem;
-    }
-
-    h2 {
-        @extend %reset;
-
-        padding: 2.5rem 0;
-        font-weight: 700;
-    }
-
-    p {
-        padding-bottom: 2rem;
-    }
-}
 
 /* GALLERY SECTION */
 
@@ -623,231 +336,8 @@
         color: rgb(95, 95, 95);
     }
 }
-
-
-
-/* PERKS SECTION */
-
-.perks {
-    background: rgb(179, 1, 106);
-    color:#FFF;
-    display:flex;
-    flex-wrap:wrap;
-    
-    justify-content: space-evenly;
-    padding:4.5rem 5rem;
-    
-    align-items: center;
-    
-
-    article {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding:1rem;
-
-   
-    }
-}
-
-.numbers {
-    font-weight:bold;
-    font-size:2.2rem;
-    padding-top:1rem;
-}
-
-
-/* NEWS SECTION */
-
-
-.news {
-    text-align: center;
-    color: rgb(95, 95, 95);
-    padding:7rem 12rem;
-
-
-    @include mq ( desktop-wide, max) {
-        padding:7rem 8rem;
-    }
-    @include mq ( desktop, max) {
-        padding:7rem 2rem;
-    }
-  
-    background:rgb(251, 248, 251);
-
-    h2 {
-        font-weight:700;
-        @extend %reset;
-        padding-bottom:1.5rem;
-    }
-
-}
-
-.recent-news {
-    display:flex;
-    justify-content: space-between;
-    padding-top:7rem;
-    text-align:left;
-    
-    @include mq ( tablet-wide, max) {
-       flex-direction: column;
-       align-items: center;
-    }
-    
-
-    article {
-        display:flex;
-        background:#FFF;
-        align-items: flex-start;
-        border-radius:0.2rem;
-        box-shadow:1px 1px 2px rgba(0,0,0,0.15);
-        margin-bottom:5.5rem;
-        
-        @include mq(tablet-wide,max) {
-
-            &:nth-child(1),
-            &:nth-child(2){
-                margin:3rem;
-            }
-
-        }
-
-        @include mq(tablet,max) {
-
-            display:block;
-        }
-
-        img {
-            width:auto;
-            height:100%;
-
-            @include mq(tablet,max) {
-
-                width:100%;
-                height:auto;
-            }
-        }
-        
-        a {
-            display:block;
-            text-decoration: none;
-            color:rgb(232, 4, 139);
-            font-size:1.5rem;
-            font-weight:bold;
-        }
-
-        &:nth-child(1){
-            margin-right:3rem;
-        }
-        &:nth-child(2){
-            margin-left:3rem;
-        }
-    }
-
-
-
-    .info {
-        padding:4rem 5rem 5rem 1rem;
-
-        @include mq(tablet,max) {
-            padding:4rem 5rem 5rem 2rem;
-        }
-    }
-}
-
-
-/* PRICE SECTION */
-
-.price-table {
-
-    background: linear-gradient(rgba(black, 0.8), rgba(black, 0.8)), url("../images/background3.jpg");
-    background-size: cover;
-    color:#FFF;
-    text-align: center;
-    padding:5rem 10rem;
-    padding-bottom:7rem;
-
-    @include mq(tablet-small,max) {
-        padding:5rem 7rem;
-    }
-
-    @include mq(phablet,max) {
-        padding:5rem 5rem;
-    }
- 
-    @include mq(phone,max) {
-        padding:5rem 2rem;
-    }
- 
   
 
-    article {
-
-        border-radius:0.3rem;
-
-        @include mq (tablet-wide, max) {
-            padding-bottom:3rem;
-        }
-        a {
-            margin-top:2rem;
-            
-        }
-    }
-
-    article:nth-child(2) {
-        .list {
-            background:rgb(232, 4, 139);
-            color: #FFF;
-
-            li:nth-child(2) {
-                color:#FFF;
-            }
-        }
-
-        .button2 {
-            background:#FFF;
-            border-color:#FFF;
-            color:rgb(232, 4, 139);
-            transition:color 0.3s ease-in-out,background 0.3s ease-in-out;
-
-            &:hover {
-                background:transparent;
-                color:#FFF;
-            }
-        }
-    }
-
-    h2 {
-        color:#FFF;
-        font-weight: 700;
-        @extend %reset;
-        padding-bottom:1.5rem;
-    }
-
-    li {
-        list-style:none; 
-    }
-
-
-    /* STYLE EFFECTS */
-
-    li:nth-child(1) {
-        font-weight:bold;
-        text-transform: uppercase;
-        padding:0;
-    }
-
-    li:nth-child(2) {
-        font-size:3rem;
-        color:rgb(232, 4, 139);
-        font-weight:700;
-        padding:0;
-        padding-bottom:1rem;
-    }
-
-    /* STYLE EFFECTS */
-}
 
 .table {
     display:grid;
@@ -880,4 +370,156 @@
     padding:3.5rem 3rem;
     border-radius:0.3rem;
     margin-bottom:3rem;
+}
+
+/* NEWS SECTION */
+
+
+.news {
+    text-align: center;
+    color: rgb(95, 95, 95);
+    padding:7rem 12rem;
+
+
+    @include mq ( desktop-wide, max) {
+        padding:7rem 8rem;
+    }
+    @include mq ( desktop, max) {
+        padding:7rem 2rem;
+    }
+  
+    background:rgb(251, 248, 251);
+
+    h2 {
+        font-weight:700;
+        @extend %reset;
+        padding-bottom:1.5rem;
+    }
+
+}
+
+
+
+/*BLOG PAGE */
+body.blog .news {
+    background:rgb(253, 252, 253);
+}
+body.blog .recent-news{
+    grid-template-columns: repeat(2, 40rem);
+    grid-template-rows: repeat(3, 22rem);
+
+    @include mq ( Screen3, max) {
+        grid-template-columns: repeat(2, 35rem);
+        grid-template-rows: repeat(1, 20rem);
+     }
+
+
+    @include mq ( tablet-wide, max) {
+       flex-direction: column;
+       align-items: center;
+    }
+    
+    @include mq ( tablet-wide, max) {
+       display:flex;
+     }
+
+
+}
+
+.recent-news {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 40rem);
+    grid-template-rows: repeat(1, 22rem);
+    padding-top:7rem;
+    text-align:left;
+    grid-column-gap:1rem;
+   
+   
+    
+    @include mq ( Screen3, max) {
+        grid-template-columns: repeat(2, 35rem);
+        grid-template-rows: repeat(1, 20rem);
+     }
+
+
+    @include mq ( tablet-wide, max) {
+       flex-direction: column;
+       align-items: center;
+    }
+    
+    @include mq ( tablet-wide, max) {
+       display:flex;
+     }
+
+  
+    article {
+        display:flex;
+        background:#FFF;
+        align-items: flex-start;
+        border-radius:0.2rem;
+        box-shadow:1px 1px 2px rgba(0,0,0,0.15);
+        margin-bottom:5.5rem;
+
+        overflow: hidden;
+        
+        @include mq(tablet-wide,max) {
+         
+                margin:3rem;
+            
+
+        }
+
+        @include mq(tablet,max) {
+
+            display:block;
+        }
+
+        img {
+            width:auto;
+            height:100%;
+
+            @include mq(tablet,max) {
+
+                width:100%;
+                height:auto;
+            }
+        }
+        
+        a {
+            display:block;
+            text-decoration: none;
+            color:rgb(232, 4, 139);
+            font-size:1.3rem;
+            font-weight:bold;
+        }
+
+        &:nth-child(odd){
+            margin-right:3rem;
+        }
+        &:nth-child(even){
+            margin-left:3rem;
+        }
+    }
+
+
+
+    .info {
+        padding:4rem 2rem 5rem 1rem;
+      
+
+            
+    @include mq ( Screen3, max) {
+        padding:2rem 5rem 1rem 1rem;
+     }
+
+     
+     @include mq(tablet-wide,max) {
+        padding:4rem 5rem 5rem 1rem;
+    }
+
+        @include mq(tablet,max) {
+            padding:4rem 5rem 5rem 2rem;
+        }
+    }
 }
