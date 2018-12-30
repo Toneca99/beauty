@@ -5,7 +5,11 @@
     justify-content: center;
     background: rgb(251, 248, 251);
     padding: 4rem 11rem;
-
+    
+ 
+    @include mq(desktop-wide,min) { 
+        padding: 4rem 0rem;
+     }
     @include mq(desktop,max) {
         padding:4rem 5rem;
     }
@@ -37,6 +41,11 @@
     padding: 2rem 0;
     justify-content: center;
     align-items: center;
+
+    @include mq(desktop-wide,min) { 
+        flex-basis:40rem;
+     }
+
 }
 
 .text-side {
@@ -125,6 +134,7 @@
 
 /* GALLERY SECTION */
 
+
 .gallery-index {
     text-align: center;
     padding: 0 10rem;
@@ -138,6 +148,17 @@
     @include mq(phone, max) {
         padding: 0 2rem;
     }
+
+    @include mq(desktop-wide, min) {
+        padding: 0 22rem;
+        padding-bottom: 5rem;
+    }
+
+
+    @include mq(Screen4, min) {
+        padding: 0 28rem;
+        padding-bottom: 5rem;
+    }
  
 
     h2 {
@@ -146,6 +167,27 @@
         margin-top: 4rem;
         padding: 2rem 0;
         font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .gallery-index {
+        padding: 0 35rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .gallery-index {
+        padding: 0 45rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .gallery-index {
+        padding: 0 50rem;
+        padding-bottom: 5rem;
     }
 }
 
@@ -387,6 +429,16 @@
     @include mq ( desktop, max) {
         padding:7rem 2rem;
     }
+
+    
+    @include mq(desktop-wide, min) {
+        padding: 7rem 22rem;
+    }
+
+
+    @include mq(Screen4, min) {
+        padding: 7rem 28rem;
+    }
   
     background:rgb(251, 248, 251);
 
@@ -396,6 +448,24 @@
         padding-bottom:1.5rem;
     }
 
+}
+
+@media screen and (min-width: 2000px) {
+    .news{
+        padding: 7rem 35rem;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .news {
+        padding: 7rem 45rem;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .news {
+        padding: 7rem 50rem;
+    }
 }
 
 
