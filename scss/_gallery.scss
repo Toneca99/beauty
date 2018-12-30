@@ -23,31 +23,6 @@
  
 }
 
-body.gallery .heading {
-
-        padding: 3rem 12rem;
-    
-        @include mq(tablet-wide, max) {
-            padding:3rem 5rem;
-        }
-    
-        @include mq(phablet, max) {
-            padding:3rem 2rem;
-        }
-    
-        h2 {
-            @extend %reset;
-    
-            padding: 2.5rem 0;
-            font-weight: 700;
-        }
-    
-        p {
-            padding-bottom: 2rem;
-        }
-    }
-
-
 .gallery-articles {
 
         grid-template-columns: repeat(3 , 26.5rem);

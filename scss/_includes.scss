@@ -8,35 +8,43 @@
     align-items: center;
     padding: 3rem 3rem;
 
+    @include mq(desktop-wide, min) {
+        justify-content: center;
+
+        article {
+            margin-right: 5rem;
+            margin-left: 3rem;
+        }
+    }
+
+
     @include mq(tablet-wide, max) {
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         padding: 3rem 9rem;
 
         a {
-            margin-top:1rem;
+            margin-top: 1rem;
             text-align: center;
         }
     }
 
+
     @include mq(Screen1, max) {
-       
         article {
             margin: 0.5rem;
-           
         }
     }
+
 
     @include mq(tablet, max) {
-        flex-direction:column;
+        flex-direction: column;
 
-       
-        
         article {
-            padding-bottom:2.5rem;
-            
+            padding-bottom: 2.5rem;
         }
     }
-  
+
+
     article {
         display: flex;
         align-items: center;
@@ -46,7 +54,6 @@
             flex-direction: column;
             text-align: center;
         }
-
     }
 
     span {
@@ -62,134 +69,137 @@
         margin-right: 1.5rem;
 
         @include mq(tablet, max) {
-           margin:0;
+            margin: 0;
         }
     }
 }
-
 
 /* PERKS SECTION */
 
 .perks {
     background: rgb(179, 1, 106);
-    color:#FFF;
-    display:flex;
-    flex-wrap:wrap;
-    
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding:4.5rem 5rem;
-    
+    padding: 4.5rem 5rem;
     align-items: center;
-    
+
+
+    @include mq(desktop-wide, min) {
+        justify-content: center;
+    }
 
     article {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding:1rem;
+        padding: 1rem;
 
-   
+        @include mq(desktop-wide, min) {
+            margin:0 7rem;
+        }
     }
 }
 
 .numbers {
-    font-weight:bold;
-    font-size:2.2rem;
-    padding-top:1rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding-top: 1rem;
 }
-
-
 
 /* PRICE SECTION */
 
 .price-table {
-
     background: linear-gradient(rgba(black, 0.8), rgba(black, 0.8)), url("../images/background3.jpg");
     background-size: cover;
-    color:#FFF;
+    color: #FFF;
     text-align: center;
-    padding:5rem 10rem;
-    padding-bottom:7rem;
+    padding: 5rem 0rem;
+    padding-bottom: 7rem;
 
-    @include mq(tablet-small,max) {
-        padding:5rem 7rem;
+    @include mq(tablet-small, max) {
+        padding: 5rem 7rem;
     }
 
-    @include mq(phablet,max) {
-        padding:5rem 5rem;
+
+    @include mq(phablet, max) {
+        padding: 5rem 5rem;
     }
- 
-    @include mq(phone,max) {
-        padding:5rem 2rem;
+
+
+    @include mq(phone, max) {
+        padding: 5rem 2rem;
     }
- 
-  
+
 
     article {
+        border-radius: 0.3rem;
 
-        border-radius:0.3rem;
-
-        @include mq (tablet-wide, max) {
-            padding-bottom:3rem;
+        @include mq(tablet-wide, max) {
+            padding-bottom: 3rem;
         }
+
+
         a {
-            margin-top:2rem;
-            
+            margin-top: 2rem;
         }
     }
 
     article:nth-child(2) {
         .list {
-            background:rgb(232, 4, 139);
+            background: rgb(232, 4, 139);
             color: #FFF;
 
             li:nth-child(2) {
-                color:#FFF;
+                color: #FFF;
             }
         }
 
         .button2 {
-            background:#FFF;
-            border-color:#FFF;
-            color:rgb(232, 4, 139);
-            transition:color 0.3s ease-in-out,background 0.3s ease-in-out;
+            background: #FFF;
+            border-color: #FFF;
+            color: rgb(232, 4, 139);
+            transition: color 0.3s ease-in-out,background 0.3s ease-in-out;
 
             &:hover {
-                background:transparent;
-                color:#FFF;
+                background: transparent;
+                color: #FFF;
             }
         }
     }
 
     h2 {
-        color:#FFF;
+        color: #FFF;
         font-weight: 700;
+
         @extend %reset;
-        padding-bottom:1.5rem;
+
+        padding-bottom: 1.5rem;
     }
 
     li {
-        list-style:none; 
+        list-style: none;
     }
 
-        /* STYLE EFFECTS */
+    /* STYLE EFFECTS */
 
-        li:nth-child(1) {
-            font-weight:bold;
-            text-transform: uppercase;
-            padding:0;
-        }
-    
-        li:nth-child(2) {
-            font-size:3rem;
-            color:rgb(232, 4, 139);
-            font-weight:700;
-            padding:0;
-            padding-bottom:1rem;
-        }
-    
-        /* STYLE EFFECTS */
+    li:nth-child(1) {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0;
+    }
+
+    li:nth-child(2) {
+        font-size: 3rem;
+        color: rgb(232, 4, 139);
+        font-weight: 700;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    /* STYLE EFFECTS */
 }
 
 /* SERVICES SECTION */
@@ -199,54 +209,58 @@
     color: rgb(95, 95, 95);
     padding: 0 10rem;
     background: rgb(251, 248, 251);
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
 
-    @include mq(tablet-wide, max) { 
-
-        padding:0 5rem;
+    @include mq(tablet-wide, max) {
+        padding: 0 5rem;
     }
 
-    @include mq(tablet, max) { 
 
-        padding:0 10rem;
+    @include mq(tablet, max) {
+        padding: 0 10rem;
     }
 
-    @include mq(tablet-small, max) { 
 
-        padding:0 7rem;
+    @include mq(tablet-small, max) {
+        padding: 0 7rem;
     }
 
-    @include mq(phablet, max) { 
 
-        padding:0 5rem;
+    @include mq(phablet, max) {
+        padding: 0 5rem;
     }
-    
-    @include mq(phone, max) { 
 
-        padding:0 2rem;
+
+    @include mq(phone, max) {
+        padding: 0 2rem;
     }
+
 
     h2 {
         font-weight: 700;
         padding-bottom: 0;
+
         @extend %reset;
-        padding:5.5rem 0 1.5rem 0;
+
+        padding: 5.5rem 0 1.5rem 0;
     }
 
     .service-buttons {
         padding: 3rem 0;
-        
-        @include mq (phablet, max) {
-            display:flex;
+
+        @include mq(phablet, max) {
+            display: flex;
             flex-direction: column;
         }
+
 
         a {
             margin: 0 0.5rem;
 
-            @include mq (phablet, max) { 
-                margin:0.5rem 0;
+            @include mq(phablet, max) {
+                margin: 0.5rem 0;
             }
+
 
             &:nth-child(1) {
                 padding: 1rem 1.5rem;
@@ -254,14 +268,36 @@
 
             &:nth-child(2) {
                 padding: 1rem 2.5rem;
-        
             }
 
             &:nth-child(2):hover {
-                border:2px solid black;
-                color:black;
+                border: 2px solid black;
+                color: black;
             }
         }
+    }
+}
+
+.service-heading {
+    @include mq(desktop-wide, min) {
+        padding: 0 15rem;
+    }
+
+
+    @include mq(Screen4, min) {
+        padding: 0 22rem;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .service-heading {
+        padding: 0 35rem;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .service-heading {
+        padding: 0 40rem;
     }
 }
 
@@ -277,9 +313,12 @@
         grid-template-columns: repeat(2, 22rem);
     }
 
+
     @include mq(tablet, max) {
         grid-template-columns: 1fr;
     }
+
+
     article {
         background: #FFF;
         border: 1px solid rgb(226, 226, 226);
@@ -288,7 +327,7 @@
 
         img {
             border-radius: 50%;
-            width:65%;
+            width: 65%;
         }
     }
 
@@ -315,8 +354,6 @@
     color: #FFF;
     text-align: center;
     position: relative;
-  
-  
 
     .members {
         display: grid;
@@ -327,13 +364,15 @@
 
         @include mq(desktop, max) {
             grid-template-columns: repeat(2, 19rem);
-            grid-gap:3rem;
+            grid-gap: 3rem;
         }
-    
+
+
         @include mq(tablet-small, max) {
             grid-template-columns: repeat(1, 19rem);
         }
-        
+
+
         overflow: hidden;
     }
 
@@ -347,24 +386,28 @@
         margin-bottom: 5rem;
 
         @include mq(desktop, max) {
-            margin-bottom:0rem;
+            margin-bottom: 0rem;
 
             &:nth-child(3),
             &:nth-child(4) {
-                margin-bottom:5rem;
+                margin-bottom: 5rem;
             }
-
         }
+
 
         @include mq(tablet-small, max) {
-            margin-bottom:0rem;
+            margin-bottom: 0rem;
 
-            &:nth-child(3) {margin:0}
-            &:nth-child(4) {
-                margin-bottom:5rem;
+            &:nth-child(3) {
+                margin: 0;
             }
 
+            &:nth-child(4) {
+                margin-bottom: 5rem;
+            }
         }
+
+
         div {
             text-align: left;
             padding: 1.5rem;
@@ -389,16 +432,37 @@
     padding-bottom: 1.5rem;
 }
 
+
+body.gallery .heading{
+    @include mq(desktop-wide, min) {
+       
+        padding-top:1rem;
+        padding-bottom:3rem;
+    }
+
+}
 .heading {
     padding: 3rem 14rem;
 
     @include mq(Screen1, max) {
-        padding:3rem 5rem;
+        padding: 3rem 5rem;
     }
 
+
     @include mq(phablet, max) {
-        padding:3rem 2rem;
+        padding: 3rem 2rem;
     }
+
+
+    @include mq(desktop-wide, min) {
+        padding: 0 22rem;
+    }
+
+
+    @include mq(Screen4, min) {
+        padding: 0 28rem;
+    }
+
 
     h2 {
         @extend %reset;
@@ -411,12 +475,31 @@
         padding-bottom: 2rem;
     }
 }
+@media screen and (min-width: 2000px) {
+    .heading {
+        padding: 0 30rem;
+    }
+}
 
 
+@media screen and (min-width: 2100px) {
+    .heading {
+        padding: 0 35rem;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .heading {
+        padding: 0 40rem;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .heading {
+        padding: 0 50rem;
+    }
+}
 
 /* BLOG PAGE */
 
-.page-buttons {
-
-  
-}
+.page-buttons {}

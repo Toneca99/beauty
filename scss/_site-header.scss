@@ -29,5 +29,11 @@ body.home .site-header {
         width:auto;
         height:100%;
         
+        @include mq (desktop-wide, min) {
+           margin-right:10rem;
+        }        
+
+      
     }
 }
+

@@ -7,9 +7,8 @@ body.home .navigation {
     padding:0 13rem;
     flex-wrap:wrap;
 
-    @include mq( desktop-wide, min) {
-
-   
+    @include mq (desktop-wide , min) {
+        justify-content: center;
     }
     @include mq( desktop, max) {
         padding:0 5rem;
@@ -28,8 +27,12 @@ body.home .navigation {
     transition:background 0.2s ease-in,box-shadow 0.2s ease-in;
     display:flex;
     justify-content: space-between;
-    padding:0 13rem;
+    padding:0 5rem;
     flex-wrap:wrap;
+
+    @include mq (desktop-wide , min) {
+        justify-content: center;
+    }
 
     @include mq( desktop, max) {
         padding:0 5rem;
@@ -95,7 +98,9 @@ body.contact .nav-main {
 .nav-main {
 
     display:none;
-    
+    @include mq (desktop-wide , min) {
+        margin-left:10rem;
+     }    
 
 
     ul {
